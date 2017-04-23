@@ -1,5 +1,7 @@
 # TensorFlow Android stand-alone demo
 
+[![Build Status](https://travis-ci.org/apacha/MobileMusicScoreClassifier.svg?branch=master)](https://travis-ci.org/apacha/MobileMusicScoreClassifier)
+
 Android demo source files extracted from original TensorFlow source. (TensorFlow 1.1.0)
 
 To build this demo, you don't need to prepare build environment with Bazel, and it only requires AndroidStudio.
