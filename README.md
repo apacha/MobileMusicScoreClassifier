@@ -14,15 +14,21 @@ It is part of a set of three tools:
 
 # Building the application
 The repository contains a gradle-based build-script that can be used to assemble the application in Android Studio.
+Basically what you need is to run `./gradlew assembleRelease`.
 
-## Authors
-Alexander Pacha, TU Wien
+The repository contains only a tiny model that was trained on 128x128 pixel images. 
+To improve the results, you can train 
+the model with more data using the [Model Trainer](https://github.com/apacha/MusicScoreClassifier).
+To use the output from there, replace the `output_graph.pb` in the assets folder and
+change [Line 62 in ClassifierActivity.java](https://github.com/apacha/MobileMusicScoreClassifier/blob/master/app/src/main/java/org/tensorflow/demo/ClassifierActivity.java#L62)
+to reflect the actual size of input images used for training, likely 256 instead of 128.
+
 
 ## License
 
 Published under MIT License,
 
-Copyright (c) 2017 Alexander Pacha
+Copyright (c) 2017 [Alexander Pacha](http://my-it.at), [TU Wien](https://www.ims.tuwien.ac.at/people/alexander-pacha)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
